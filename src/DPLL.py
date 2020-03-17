@@ -140,6 +140,12 @@ def backtrack(C, p, fconsist, show_print=False):
     S = deque()
 
     while True:
+<<<<<<< HEAD
+=======
+        if len(S) == p:
+            print("Nombre d'itérations finales = ", cpt_aff)
+            return S
+>>>>>>> 8248dda6a8ed69591c7c43901e5d63c8f261f539
         cpt_aff += 1
         # print(cpt_aff)
         # if cpt_aff % 100 == 0:
@@ -178,6 +184,7 @@ def backtrack(C, p, fconsist, show_print=False):
 
 def main_SAT(p, C):
     begin = perf_counter()
+<<<<<<< HEAD
 
     S = backtrack(C, p, test_consistance_heurstique1)  # compteur de littéraux
     end = perf_counter()
@@ -191,6 +198,26 @@ def main_SAT(p, C):
 # p, C = parse_sat("SAT/uuf125-01.cnf")  # 116895 itérations, 762 secondes
 # p, C = parse_sat("SAT/jnh1.cnf")
 # p, C = parse_sat("SAT/aim-50-1_6-no-1.cnf")
+=======
+    # print(p)
+
+    S = backtrack(C, p, test_consistance_heurstique1)  # compteur de littéraux
+    end = perf_counter()
+    # print(S)
+    # print()
+    print(f"CPT ECHECS = {CPT_FALSE}, CPT CLAUSES UNITAIRES PROP. = {CPT_CU}")
+    print(f"TEMPS DE CALCUL : {round(end - begin, 2)} secondes")
+    # print(S)
+
+
+# p, C = parse_sat("SAT/uuf50-05.cnf")
+# p, C = parse_sat("SAT/uf50-01.cnf")
+# heuristique 1 : 6 secondes, 423 itérations || heuristique 2 : 14 sec, 962 itérations
+# p, C = parse_sat("SAT/jnh1.cnf")
+# heuristique 1 : 10sec; 26217 itérations || heuristique 2 : 22 sec, 73186 itérations
+# p, C = parse_sat("SAT/aim-50-1_6-no-1.cnf")
+# p, C = parse_sat("SAT/uuf125-01.cnf")  # 116895 itérations, 762 secondes
+>>>>>>> 8248dda6a8ed69591c7c43901e5d63c8f261f539
 # p, C = parse_sat("SAT/logistics.a.cnf")  # 116895 itérations, 762 secondes
 CPT_FALSE = 0
 CPT_CU = 0
@@ -235,6 +262,11 @@ def main_graph(file, K_couleurs):
     C = generate_phase2(C, V, K_couleurs)
 
     p = generate_lit_id(K_couleurs, edges)[-1]
+<<<<<<< HEAD
+=======
+    # print(f" AAAAAAAAAAAAAAAAAAAAAAAAAPour les graphes, p = {p}")
+    # print(C)
+>>>>>>> 8248dda6a8ed69591c7c43901e5d63c8f261f539
 
     begin = perf_counter()
     S = backtrack(C, p, test_consistance_heurstique1)  # compteur de littéraux
@@ -255,6 +287,7 @@ def main_graph(file, K_couleurs):
                                             ((i+1)*K_couleurs - e[0])) + "\n")
         return True
 
+<<<<<<< HEAD
 # f = "GRAPH\\perso.col"
 # f = "GRAPH\\flat20_3_0.col"
 # f = "GRAPH/flat20_3_0.col"
@@ -267,6 +300,14 @@ def main_graph(file, K_couleurs):
 
 
 
+=======
+# f = "color/perso.col"
+# f = "color/flat20_3_0.col"
+# f = "color/le450_15a.col"
+# main_graph(f, 3)
+
+
+>>>>>>> 8248dda6a8ed69591c7c43901e5d63c8f261f539
 def get_affectation(S, var):
     for X, v, _ in S:
         if X == abs(var):
