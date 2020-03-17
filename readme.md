@@ -35,17 +35,12 @@ Pour GRAPH, il faut, en plus du choix du fichier (comme pour SAT), spécifier le
 |   SAT/logistics.a.cnf   |   trop long   |                 ?                |       ?       |      ?     |         ?        |        ?        |
 
 
-<<<<<<< HEAD
-## Tableau des résultats (GRAPH)
-
 
 |  Fichiers / Critères | Satisfiable ? | Nb couleurs(K) | Temps de calcul | Nb itérations |          Image de le coloration          |
 |:--------------------:|:-------------:|:--------------:|:---------------:|:-------------:|:----------------------------------------:|
-| GRAPH/flat20_3_0.col |      OUI      |        3       |      0.01s      |       15      | [Img](src/img_coloration/flat20_3_0.png) |
-|   GRAPH/myciel4.col  |      OUI      |        4       |      0.03s      |       36      |   [Img](src/img_coloration/myciel4.png)  |
-|   GRAPH/myciel5.col  |      OUI      |        5       |      0.56s      |       83      |   [Img](src/img_coloration/myciel5.png)  |
-|  GRAPH/queen5_5.col  |      OUI      |        5       |      0.31s      |       32      |  [Img](src/img_coloration/queen5_5.png)  |
+| GRAPH/flat20_3_0.col |      OUI      |        3       |      0.01s      |       15      | [Voir image](src/img_coloration/flat20_3_0.png) |
+|   GRAPH/myciel4.col  |      OUI      |        4       |      0.03s      |       36      |   [Voir image](src/img_coloration/myciel4.png)  |
+|   GRAPH/myciel5.col  |      OUI      |        5       |      0.56s      |       83      |   [Voir image](src/img_coloration/myciel5.png)  |
+|  GRAPH/queen5_5.col  |      OUI      |        5       |      0.31s      |       32      |  [Voir image](src/img_coloration/queen5_5.png)  |
 |  GRAPH/queen9_9.col  |       ?       |        ?       |        ?        |       ?       |                     /                    |
 |  GRAPH/le450_15a.col |   trop long   |       15       |        ?        |       ?       |                     /                    |
-=======
->>>>>>> 8248dda6a8ed69591c7c43901e5d63c8f261f539
